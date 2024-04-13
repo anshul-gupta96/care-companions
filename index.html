@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>care companions </title>
+
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<header class="site-header">
+		<div class="container clr">
+			<div class="site-logo one-third left responsive responsive-text-center">
+				<img style="height: 22px;width:190px;object-fit: cover;object-position: center, ;" src="img/care-companions-1-logo.png">
+			</div>
+			<div class="text-right responsive-text-center two-third left responsive">
+				
+				<div class="btn btn-medium purple-bg menu-btn">Menu</div>
+				<div class="main-nav">
+					<ul class="main-nav-list list-inline">
+						<li><a href="">Home</a></li>
+						<li><a id="login-btn">Login</a></li>
+						
+						<li><a href="#our-services" id="services-us-link">Services</a></li>
+						<li><a href="#about-us" id="about-us-link">About</a></li>
+						<li><a href="rates.html">Rates</a></li>
+						<li><a href="">Contact</a></li>
+						<li><a href="careers.html">Careers</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+    
+	<section class="landing-screen">
+		<div class="landing-screen-bg">
+			<img src="img/ls-bg.jpg">
+		</div>
+		<div class="welcome-text text-center small-padding responsive">
+			<h1 class="line">INDIA'S TRUSTED HOME MAKERS </h1>
+			<p aria-setsize="50px">Hire professionals,
+				Experienced specifically for your needs <br>care companions offers completely certified workers with an complimentary replacement policy</p>
+		</div>
+		<div class="landing-form-video">
+			<div class="container clr">
+				<div class="half responsive left">
+					<form class="ls-form">
+						
+						<div class="form-group clr">
+							<label for="ls-bedrooms" class="one-third responsive left">Services : <span id="range-value-ls-bedrooms"></span></label>
+							<select class="two-third responsive left" id="ls-workarea">
+								<option></option>
+								<option>Domestic Help</option>
+			            		<option>Cooks</option>
+								<option>Babysitter/Japa</option>
+								<option>All-Rounder</option>
+								<option>House Cleaning</option>
+								<option>24 Hrs-Live in</option>
+								
+							</select>
+						</div>
+						<div class="form-group clr">
+			                <label for="ls-schedule" class="one-third responsive left">Set Schedule: </label>
+			                <input type="datetime-local" value="2023-10-16T23:20" min="20-01-01T00:00" max="2024-01-01T00:00"  class="ls-datetime left"/>
+			            </div>
+			            <div class="form-group clr">
+			            	<label for="ls-workarea" class="one-third responsive left">Location: </label>
+			            	<select class="two-third responsive left" id="ls-workarea">
+								<option></option>
+								<option>Guna</option>
+			            		<option>Dehli</option>
+								<option>Noida</option>
+								<option>Gurugram</option>
+			            	</select>
+			            </div>
+			            <a href="#" class="ls-more">More options</a>
+			            <input type="submit" class="btn btn-large btn-block purple-bg" value="BOOK NOW">
+					</form>
+				</div>
+				<div class="ls-video half responsive left">
+					<iframe width="500" height="280" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+    <section class="services text-center" id="our-services">
+		<h2>Our Services</h2>
+		<img class="heading-separator" src="img/separator.png">
+		<div class="container clr">
+			<div class="large-padding one-third responsive left">
+				<div class="services-circle">
+					<img style="height: 170px;width:175px;object-fit: cover;object-position: right;" src="img/domestic help.jpg" class="circular-image">
+				</div>
+				<div class="services-text">Domestic Help</div>
+			</div>
+			<div class="large-padding one-third responsive left">
+				<div class="services-circle">
+					<img style="height: 170px;width: 175px;object-fit: cover;object-position: right;" src="img/cook.jpg" class="circular-image">
+				</div>
+				<div class="services-text">Cooks</div>
+			</div>
+			<div class="large-padding one-third responsive left">
+				<div class="services-circle">
+					<img style="height: 170px;width: 175px;object-fit: cover;object-position: right;" src="img/babysitter.jpg" class="circular-image">
+				</div>
+				<div class="services-text">Babysitter/Japa </div>
+			</div>
+			<div class="large-padding one-third responsive left">
+				<div class="services-circle">
+					<img style="height: 170px;width: 175px;object-fit: cover;object-position: right;" src="img/All-rounder.png"
+					class="circular-image">
+				</div>
+				<div class="services-text">All-Rounder</div>
+			</div>
+			<div class="large-padding one-third responsive left">
+				<div class="services-circle">
+					<img style="height: 170px;width: 175px;object-fit: cover;object-position: right;" src="img/24hourLive.jpeg" class="circular-image">
+				</div>
+				<div class="services-text">24 Hrs-Live in</div>
+			</div>
+			<div class="large-padding one-third responsive left">
+				<div class="services-circle">
+					<img style="height: 170px;width: 175px;object-fit: cover;object-position: top;" src="img/cleaner.jpg" class="circular-image">
+				</div>
+				<div class="services-text">House Cleaning</div>
+			</div>
+		</div>
+	</section>
+	<section class="about" id="about-us">
+		<div class="container text-center" >
+			<h2>About us <span class="purple-color bold"></span><span class="bold"></span></h2>
+			<img class="heading-separator" src="img/separator.png">
+			<p class="container">The care companions website is to provide a platform that connects individual with trusted caregivers who are trained professionals and provide tailored care meet the unique needs of each client.The site may offer resources and tools for finding and hiring trained caregivers who provide 
+				compassionate and personalized care to enhance the quality of life of individuals and their families.</p>
+			<p class="container">Give us a call today. No job is too large or too small.  Our services are guaranteed. If you are not completely satisfied, call us within 24 hours and we will send another team of service providers  back at no additional charge.
+			</p>
+		</div>
+	</section>
+
+	<section class="how-it-works text-center">
+		<h2>How <span class="purple-color">care</span><span class="bold">companion</span> works</h2>
+		<img class="heading-separator" src="img/separator.png">
+		<div class="container clr">
+			<div class="small-padding one-third responsive left">
+				<div class="hiw-wrapper">
+					<div class="hiw-top">
+						<img src="img/booknow.png" class="hiw-bg">
+						<img src="img/mouse.png" class="hiw-icon">
+					</div>
+					<div class="hiw-bottom text-center">
+						<h3>Book</h3>
+						<p>Select the date and time you'd like your professional to show</p>
+					</div>
+				</div>
+			</div>
+			<div class="small-padding one-third responsive left">
+				<div class="hiw-wrapper">
+					<div class="hiw-top">
+						<img src="img/clean.png" class="hiw-bg">
+						<img src="img/broom.png" class="hiw-icon">
+					</div>
+					<div class="hiw-bottom text-center">
+						<h3>work</h3>
+						<p>A certified maid comes and complete your work</p>
+					</div>
+				</div>
+			</div>
+			<div class="small-padding one-third responsive left">
+				<div class="hiw-wrapper">
+					<div class="hiw-top">
+						<img src="img/relax.png" class="hiw-bg">
+						<img src="img/sofa.png" class="hiw-icon">
+					</div>
+					<div class="hiw-bottom text-center">
+						<h3>Relax</h3>
+						<p>Sit back and relax. Enjoy your sparkling home</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="appointment text-center">
+		<a href="#" class="btn btn-large purple-bg appointment-btn">Book Appointment</a>
+		
+	</section>
+
+	
+
+	
+
+	<section class="faq text-center">
+		<h2>FAQ</h2>
+		<img src="img/separator.png" class="heading-separator">
+		<div class="container">
+			<div class="faq-single">
+				<h3>How can I hire a housemaid/babysitter/cook from care companions ?</h3>
+				<p> 1:Choose your desired service, fill in your requirements and make a booking on our platform.
+					<br>
+					2: Confirm your requirements with the relationship manager assigned to you.
+					<br>
+					3: Sit tight while our relationship manager finds the right fit for your home. </p>
+			</div>
+			<div class="faq-single">
+				<h3>What if I'm not satisfied with the service?</h3>
+				<p> 
+					While all our helpers undergo an intensive training regime before being certified as a Broomee, we still believe that there’s always room for improvement. In order to ensure that you obtain the optimum fit for your home, we provide an ‘complimentary replacement policy’ as part of your subscription. 
+					Just reach out to your relationship manager or mail us carecompanion@gmail.com.</p>
+			</div>
+			<div class="faq-single">
+				<h3>Will I always have the same service providers for each scheduled service?</h3>
+				<p>We make every effort to provide you with the same service providers each and every time we clean your home, but there are times that a change is required due to sickness, injury, etc.</p>
+			</div>
+		</div>
+		<a href="#" class="btn btn-large purple-bg all-faq-btn">View all FAQs</a>
+	</section>
+
+	<div class="backdrop"></div>
+	<section class="container-signin signin">
+		<div class="signin-header">
+			<h1>Sign In</h1>
+			<a href="signup.html">Create an account</a>
+			<img src="img/signin-header.png">
+		</div>
+		<form class="signin-form">
+			<fieldset class="field-container clr">
+				<input type="text" id="signin-email" name="signin-email" class="full-width bordered-input-text" placeholder="Email or login">
+				<input type="text" id="singin-password" name="singin-password" class="full-width bordered-input-text" placeholder="Password">
+				<div class="checkbox-input">
+					<input type="checkbox" id="remember-me" name="remember-me"><label for="remember-me">Remember me</label>
+				</div>
+			</fieldset>
+			<div class="text-center">
+				<input type="button" class="full-width btn btn-large purple-bg" id="signin-submit" value="Sign in">
+			</div>
+			<div class="text-center divider">
+				<img src="img/divider.png">
+			</div>
+			<div class="text-center clr">
+				<input type="button" id="singin-facebook" class="btn btn-medium facebook-btn" value="Sign In via Facebook">
+				<input type="button" id="singin-twitter" class="btn btn-medium twitter-btn" value="Sign In via Twitter">
+			</div>
+		</form>
+	</section>
+
+	<footer>
+		<div class="container clr">
+			<div class="one-fourth responsive left">
+				<h4>QUICK LINKS</h4>
+				<ul class="footer-list">
+					<li><a href="#">Login</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					
+				    <li><a href="#">Rates</a></li>
+					<li><a href="#">Contact us</a></li>
+					<li><a href="#">Careers</a></li>
+				</ul>
+			</div>
+			<div class="one-fourth responsive left">
+				<h4>SERVICES</h4>
+				<ul class="footer-list">
+					<li><a href="#">Domestic Help</a></li>
+					<li><a href="#">Cooks</a></li>
+					<li><a href="#">Babysitter/Japa</a></li>
+					<li><a href="#">All-Rounder</a></li>
+					<li><a href="#">24 Hrs-Live in</a></li>
+					<li><a href="#">House Cleaning</a></li>
+					
+				</ul>
+			</div>
+			<div class="one-fourth responsive left">
+				<h4>CONTACT US</h4>
+				<ul class="footer-list">
+					<li><a href="#">Schedule</a></li>
+					<li><a href="#">Apply</a></li>
+					<li><a href="#">Gift Certificates</a></li>
+					<li><a href="#">Email Us:carecompanions@gmail.com</a></li>
+					<li><a href="#">Phone : 7037621492</a></li>
+				</ul>
+			</div>
+			<div class="one-fourth responsive left">
+				<h4>FOLLOW US</h4>
+				<ul class="footer-social-list">
+					<li><a href="#"><img src="img/fb.png"></a></li>
+					<li><a href="#"><img src="img/tw.png"></a></li>
+					<li><a href="#"><img src="img/gp.png"></a></li>
+				</ul>
+				<h4>STAY CONNECTED</h4>
+				<p>We will never send you spam or some other trash</p>
+				<form class="footer-subscribe-form">
+					<input type="email" placeholder="Type your email here" id="footer-subscribe-input">
+					<input type="submit" class="btn" value=">" id="footer-subscribe-submit">
+				</form>
+			</div>
+		</div>
+		<div class="container subfooter clr">
+			
+			<div class="half left text-right go-to-top">
+				<span>Go to Top </span>
+				<div><img src="img/up.png"></div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

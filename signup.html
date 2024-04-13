@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>care companions</title>
+
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body class="patterned-body">
+	<header class="site-header">
+		<div class="container clr">
+			<div class="site-logo one-third left responsive responsive-text-center">
+				<img style="height: 22px;width:190px;object-fit: cover;object-position: center, ;" src="img/care-companions-1-logo.png">
+			</div>
+			<div class="text-right responsive-text-center two-third left responsive">
+				
+				<div class="btn btn-medium purple-bg menu-btn">Menu</div>
+				<div class="main-nav">
+					<ul class="main-nav-list list-inline">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="">Login</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">Services</a></li>
+						
+						<li><a href="rates.html">Rates</a></li>
+						<li><a href="">Contact</a></li>
+						<li><a href="careers.html">Careers</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+    <div class="page-heading text-center">
+		<h1>Create a new account</h1>
+	</div>
+
+	<section class="container-small signup">
+		<div class="signup-form" >
+			<div class="field-container clr">
+				<input type="text" id="signup-first-name" name="signup-first-name" class="bordered-input-text half responsive left left-field" placeholder="First Name"required>
+				<input type="text" id="signup-last-name" name="signup-last-name" class="bordered-input-text half responsive left right-field" placeholder="Last Name"required>
+			</div>
+			<div class="field-container clr">
+				<input type="text"  id="signup-mobile" name="signup-mobile" class="bordered-input-text half responsive left left-field" placeholder="Mobile number"required>
+				<input type="text" type="email" id="signup-email" name="signup-email" class="bordered-input-text half responsive left right-field" placeholder="Email"required>
+			</div>
+			<div class="field-container clr">
+				<input type="text" id="signup-password" name="signup-password" class="bordered-input-text half responsive left left-field" placeholder="Password" required>
+				<input type="text" type="password" id="signup-repeatpassword" name="signup-repeatpassword" class="bordered-input-text half responsive left right-field" placeholder="Confirm Password" required>
+			</div>
+			<form id="your">
+			<div class="text-center">
+				<input type="submit" class="btn btn-large purple-bg" id="signup-submit" value="Sign up">
+				
+			</form>
+		</div>
+			<div class="text-center divider">
+				<img src="img/divider.png">
+			</div>
+			<div class="text-center clr">
+				<input type="button" id="singup-facebook" class="btn btn-large facebook-btn" value="Sign Up via Facebook">
+				<input type="button" id="singup-twitter" class="btn btn-large twitter-btn" value="Sign Up via Twitter">
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	
+	 <footer>
+		<div class="container clr">
+			<div class="one-fourth responsive left">
+				<h4>QUICK LINKS</h4>
+				<ul class="footer-list">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Login</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					
+					<li><a href="#">Rates</a></li>
+					<li><a href="#">Contact us</a></li>
+					<li><a href="#">Careers</a></li>
+				</ul>
+			</div>
+			<div class="one-fourth responsive left">
+				<h4>SERVICES</h4>
+				<ul class="footer-list">
+					<li><a href="#">Domestic Help</a></li>
+					<li><a href="#">Cooks</a></li>
+					<li><a href="#">Babysitter/Japa </a></li>
+					<li><a href="#">>All-Rounder</a></li>
+					<li><a href="#">24 Hrs-Live in</a></li>
+					<li><a href="#">House Cleaning</a></li>
+					
+				</ul>
+			</div>
+			<div class="one-fourth responsive left">
+				<h4>CONTACT US</h4>
+				<ul class="footer-list">
+					<li><a href="#">Schedule</a></li>
+					<li><a href="#">Apply</a></li>
+					<li><a href="#">Gift Certificates</a></li>
+					<li><a href="#">Email Us</a></li>
+					<li><a href="#">Phone : 9314163824</a></li>
+				</ul>
+			</div>
+			<div class="one-fourth responsive left">
+				<h4>FOLLOW US</h4>
+				<ul class="footer-social-list">
+					<li><a href="#"><img src="img/fb.png"></a></li>
+					<li><a href="#"><img src="img/tw.png"></a></li>
+					<li><a href="#"><img src="img/gp.png"></a></li>
+				</ul>
+				<h4>STAY CONNECTED</h4>
+				<p>We will never send you spam or some other trash</p>
+				<form class="footer-subscribe-form">
+					<input type="email" placeholder="Type your email here" id="footer-subscribe-input">
+					<input type="submit" class="btn" value=">" id="footer-subscribe-submit">
+				</form>
+			</div>
+		</div>
+		<div class="container subfooter clr">
+			<div class="half left text-right go-to-top">
+				<span>Go to Top </span>
+				<div><img src="img/up.png"></div>
+			</div>
+		</div>
+	</footer>
+</body>
+<script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyBOLc2zbHS-Dm8zNjzFCw3WiCUBQkB8WYE",
+    authDomain: "login-f7aac.firebaseapp.com",
+    projectId: "login-f7aac",
+    storageBucket: "login-f7aac.appspot.com",
+    messagingSenderId: "912008115203",
+    appId: "1:912008115203:web:043a74830655577bba8a36"
+  };
+
+
+const app = initializeApp(firebaseConfig);
+const database = getDatabase(app);
+const auth = getAuth();
+
+document.getElementById('signup-submit').addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent the default form submission behavior
+
+    var email = document.getElementById('signup-email').value;
+    var password = document.getElementById('signup-password').value;
+    var username = document.getElementById('signup-first-name').value;
+
+    createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+            const user = userCredential.user;
+
+            set(ref(database, 'users/' + user.uid), {
+                username: username,
+                email: email
+            });
+
+            alert('User Created!');
+			window.location.href="./index.html";
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            alert(errorMessage);
+        });
+});
+
+
+
+</script>
+</html>
